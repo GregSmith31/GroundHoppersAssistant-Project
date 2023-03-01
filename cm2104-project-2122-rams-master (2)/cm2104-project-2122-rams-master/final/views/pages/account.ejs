@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+
+
+<head>
+    <%- include('../partials/head') %>
+        <link rel="stylesheet" href="../assets/css/account.css">
+</head>
+
+<body>
+
+    <header>
+
+        <%- include('../partials/header') %>
+            <a href="/">Home</a>
+            <a href="map">Map</a>
+            <a href="login" class="active">Account</a>
+            </div>
+            </div>
+
+            <div id="intro">
+                <div id="welcome">
+                    <h2>Welcome back <%= users.name %>
+                    </h2>
+                </div>
+
+                <div id="test">
+                    <form action="/logout">
+                        <button id="logoutButton">Logout</button>
+                    </form>
+                </div>
+            </div>
+    </header>
+
+
+
+
+    <div id="pieText1">You have visited</div>
+    <div id="pieChart">
+        <div class="outerCircle">
+            <div class="innerCircle">
+                <h2 id="userPerctile"></h2>
+                <p id="userTeamsHidden"><%= users.teams %></p>
+            </div>
+        </div>
+    </div>
+    <div id="pieText2">of the stadiums in Scotland</div>
+
+    <!--Start of footer-->
+    <div>
+        <footer>
+            <%- include('../partials/footer') %>
+        </footer>
+    </div>
+    <!--End of footer-->
+
+
+
+</body>
+
+</html>

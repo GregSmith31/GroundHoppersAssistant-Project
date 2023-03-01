@@ -1,0 +1,83 @@
+
+#pieChart{
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+#welcome{
+    
+    width: 50%;
+    float: left;
+    height: 2%;
+}
+
+#test{
+    top:50%;
+    margin: auto;
+}
+
+#pieText1{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#pieText2{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+:root{
+    --degree:0.0deg;
+    --color:#29423F;
+}
+
+#userTeamsHidden{
+    display: none;
+}
+
+.outerCircle {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    --test:var(--degree);
+    background: conic-gradient(var(--color) var(--degree), transparent calc(var(--degree) + 0.0deg) 100%);
+
+}
+
+.innerCircle {
+    display:flex;
+    height: 84%;
+    width: 84%;
+    top: 8%;
+    left: 8%;
+    position: relative;
+    border-radius: 50%;
+    background: rgb(37,169,74);
+    justify-content: center;
+    align-items: center;
+}
+p{
+    
+    flex: 0 0 0px;    
+}
+
+#logoutButton{
+    border: none;
+    text-align: center;
+    background: #29423F;
+    color: white;
+    float: right;
+    clear: right;
+    margin-right: 50px;
+    top: 50%;
+    width: 10%;
+    height: 5%;
+
+}

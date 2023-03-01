@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+
+	
+	<head>
+		<title>Map</title>
+
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/map.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	</head>
+		
+	<body>
+		
+		<header>
+
+			
+			<h1 id="pageHeader">GroundHoppersAssistant</h1>
+			
+				<a><img id="siteLogo"src="GroundhoppersAssistant.png"></a>
+		
+			<!--Start of navigation bar-->
+			<div class="navbar" id="myNavbar">
+				<div id="navbar-container">
+					<a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+					<i class="fa fa-bars"></i>
+					</a>
+					<a href="index.html">Home</a>
+					<a href="map.html" class="active">Map</a>
+					<a href="account.html">Login/Account</a>
+				</div>			
+            </div>
+			<!--End of navigation bar-->
+	
+		</header>	
+		
+		<!--Start of map-->
+		<section class="map-container">
+			<article>
+				<div id="mapid"></div>
+			</article>
+			
+			<article>
+				<div id="mapItemsInfo">
+					<p>Select which teams you have visited to show them on the map: <br> </p>
+
+					<!--Start of first list-->
+					<div id="teamList1">
+						<form>
+							<!--Start of Premiership teams-->
+							<label id="premiership"><b>Premiership</b><br></label>
+							<!--End of Premiership teams-->
+
+							<!--Start of Championship teams-->
+							<label id ="championship"><br><b>Championship</b><br></label>
+							<!--End of Championship teams-->
+
+							<!--Start of League 1 teams-->
+							<label id="leagueOne"><br><b>League 1</b><br></label> 
+							<!--End of League 1 teams-->
+						</form>
+					</div>
+					<!--End of the first list-->
+				
+					<!--Start of the second list-->					
+					<div id="teamList2">
+						<form>
+							<!--Start of League 2 teams-->
+							<label id="leagueTwo"><b>League 2</b><br></label>
+							<!--End of League 2 teams-->
+
+							<!--Start of Highland League teams-->
+							<label id="highlandLeague"><br><b>Highland League</b><br></label>
+							<!--End of Highland League teams-->
+
+							<!--Start of Lowland League teams-->
+							<label id="lowlandLeague"><br><b>Lowland League</b><br></label>
+							<!--End of Lowland League teams-->
+
+						</form>
+					</div>
+					<!--End of the second list-->
+						
+				</div>
+			</article>	
+		</section>
+		<!--End of map-->
+
+		<!--Start of footer-->
+		<div>
+			<footer>
+			<p> Page Created by RAM's</p>
+			</footer>
+		</div>
+		<!--End of footer-->
+
+		<!--Scripts-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+		<script src="js/map.js"></script>
+
+	</body>
+
+</html>

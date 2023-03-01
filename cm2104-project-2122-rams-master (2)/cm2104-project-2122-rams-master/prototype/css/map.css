@@ -1,0 +1,61 @@
+#mapid { 
+    height: 400px; 
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 5%;
+    float: left;
+}
+
+#mapItemsInfo{
+    margin-top:5%;
+    float: left;
+    clear: right;
+    margin-right: 5%;
+    margin-left: 10%;
+}
+
+
+#mapItemsInfo form{
+    height: 350px;
+    
+}
+
+#teamList1 form{ 
+    overflow-y: scroll;
+    width: 50%;
+}
+
+
+#teamList2 {
+    float: right;
+    margin-top: -350px;
+    overflow-y: scroll;
+}
+
+
+
+@media screen and (max-width:800px) {
+    #mapid{
+        width: 90%;
+        margin-right: 5%;
+    }
+    #mapItemsInfo{
+        margin-left: 5%;
+    }
+
+    #mapItemsInfo form{
+        overflow-y:visible ;
+    }
+
+    #teamList1{
+        margin-bottom: 50px;
+    }
+
+    #teamList2{
+        overflow-y:visible ;
+        float:none;
+        margin-top: 400px;
+        margin-bottom: 750px;
+    
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+
+	
+	<head>
+		<title>Login</title>
+
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/account.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	</head>
+		
+	<body>
+		
+		<header>
+
+			
+			<h1 id="pageHeader">GroundHoppersAssistant</h1>
+			
+				<a><img id="siteLogo"src="GroundhoppersAssistant.png"></a>
+		
+			<!--Start of navigation bar-->
+			<div class="navbar" id="myNavbar">
+				<div id="navbar-container">
+					<a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+					<i class="fa fa-bars"></i>
+					</a>
+					<a href="index.html" >Home</a>
+					<a href="map.html" >Map</a>
+					<a href="account.html" class="active">Login/Account</a>
+				</div>			
+            </div>
+			<!--End of navigation bar-->
+	
+		</header>	
+		
+		<!--Start of login box-->
+		<div id="login">
+			<form>
+				<fieldset class="formSize" >
+					<div class="form" >
+						<h2>Login</h2>
+					</div>
+
+					<h4>Email*</h4>
+					<input type="text" name="email" value="" required/>
+					
+					<h4> Password*</h4>
+					<input type="password" name="Password" value="" required>
+					<br><br>
+					<input type="submit" value="Login" >
+
+					<h5>* = required field</h5>
+			
+				</fieldset>
+			</form>
+		</div>
+		<!--End of login box-->
+
+		<!--Start of register box-->
+		<div id="register" style="display: none;">
+			<form action="/register" method=""POST>
+				<fieldset class="formSize">
+				<div class="form" >
+					<h2>Register</h2>
+				</div>
+					<!--Start of name box-->
+					<h4> Name*</h4>
+					<input type="text" name="name" value="" required />
+					<!--End of name box-->
+
+					<!--Start of email box-->
+					<h4>Email*</h4>
+					<input type="text" name="email" value="" required/>
+					<!--End of email box-->
+
+					<!--Start of password box-->
+					<h4> Password*</h4>
+					<input type="password" name="Password" value="" required>
+					<h4>Re-Enter Password*</h4>
+					<input type="password" name="Password2" value="" required>
+					<!--End of password box-->
+
+					<br><br>
+					<input type="submit" value="Submit" >
+
+					<h5>* = required field</h5>
+			
+				</fieldset>
+			</form>
+		</div>
+		<!--End of register box-->
+
+		
+		<!--Start of register prompt-->
+		<div id="registerPrompt">
+
+			<h2>Create an Account</h2>
+			<p>Creating an account allows you to track your progress as you visit the many stadia loacted throughout Scotland</p>
+			<button onclick="toggleRegister()">Sign Up Now!</button>
+		</div>
+		<!--End of register prompt-->
+		
+		<!--Start of footer-->
+		<div>
+			<footer>
+				<p>Page Created by RAM's</p>
+			</footer>
+		</div>
+		<!--End of footer-->
+
+		<!--Scripts-->
+		<script src="js/main.js"></script>
+
+	</body>
+</html>

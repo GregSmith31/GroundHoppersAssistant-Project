@@ -1,0 +1,73 @@
+#userTeams{
+    display: none;
+}
+
+#mapid { 
+    height: 400px; 
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 5%;
+    float: left;
+}
+
+#mapItemsInfo{
+    margin-top:5%;
+    float: left;
+    clear: right;
+    margin-right: 5%;
+    margin-left: 10%;
+}
+
+
+
+#teamList1 { 
+    float: left;
+    clear: none;
+    overflow-y: scroll;
+    height: 350px;
+    width: 45%;
+}
+
+#teamList2 {
+    float: right;
+    
+    height: 350px;
+    overflow-y: scroll;
+}
+
+#createSS{
+    margin-top: 2%;
+    margin-left: 40%;
+
+}
+
+@media screen and (max-width:800px) {
+    #mapid{
+        width: 90%;
+        margin-right: 5%;
+    }
+    #mapItemsInfo{
+        margin-left: 5%;
+    }
+
+    #teamList1{
+        overflow-y:visible ;
+        margin-bottom: 400px;
+        width: 100%;
+        margin-top: -400px;
+    }
+
+    #teamList2{
+        overflow-y:visible ;
+        float:none;
+        margin-top: 400px;
+        margin-bottom: 1000px;
+        width: 100%;
+    }
+    #createSS{
+        margin-top: 25px;
+        margin-left: 50%;
+        margin-bottom: 150px;
+    
+    }
+}

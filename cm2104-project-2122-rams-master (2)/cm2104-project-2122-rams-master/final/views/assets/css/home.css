@@ -1,0 +1,115 @@
+#introText{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#introText h2{
+    font-size: 1.25em;
+}
+
+#searchBox{
+    width: 45%;
+    margin: 2% 4%;
+    margin-bottom: 5%;
+    float: left;
+}
+
+div fieldset{
+    box-sizing: border-box;
+	border: none;
+    
+}
+
+.searchBoxTitle{
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+input{
+    width:30%;
+    
+}
+
+input[type=submit]{
+    height: 50px;
+    width: 30%;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 1%;
+
+}
+
+.instructionText{
+    display: inline-block;
+    margin-left: 2%;
+}
+
+#searchResult{
+    height: 400px;
+    width: 40%;
+    background-color: white;
+    float: left;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 100px;
+    display: none;
+    color: black;
+    text-align: center;
+    overflow-y: scroll;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#results{
+    list-style: none;
+}
+
+#results li{
+    margin: 10px 0;
+}
+
+
+/*Custom Scroll Bar*/
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(15, 15, 15); 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(49, 49, 49); 
+    }
+
+/* End of Custom Scroll Bar*/
+
+@media screen and (max-width:800px) {
+
+    #searchBox{
+        width: 70%;
+		margin-left: 15%;
+        text-align: center;
+
+    }
+
+    input{
+        width: 50%;
+    }
+
+    #searchResult{
+        clear: both;
+		margin-left: 10%;
+		width: 80%;
+		margin-bottom: 10%;
+		overflow-y: scroll;
+    }
+
+    #results{
+        list-style: none;
+    }
+
+
+}
+

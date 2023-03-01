@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+
+	
+	<head>
+        <title>Login</title>
+		<%- include('../partials/head') %>
+        <link rel="stylesheet" href="../assets/css/login.css">
+	</head>
+		
+	<body>
+		
+		<header>
+
+					<%- include('../partials/header') %>
+					<a href="/">Home</a>
+					<a href="map">Map</a>
+					<a href="login" class="active">Account</a>
+				</div>
+			</div>	
+		</header>	
+		<div class="main-content">
+			<!--Start of login box-->
+			<div id="login">
+				<form action="/loginform" method="POST">
+					<fieldset class="formSize" >
+						<div class="form" >
+							<h2>Login</h2>
+						</div>
+
+						<h4>Email*</h4>
+						<input type="text" name="email" placeholder="Enter your email" required/>
+						
+						<h4> Password*</h4>
+						<input type="password" name="password" placeholder="Enter your password" required>
+						<br><br>
+						<input type="submit" value="Login">
+
+						<h5>* = required field</h5>
+				
+					</fieldset>
+				</form>
+			</div>
+			<!--End of login box-->
+
+			<!--Start of register box-->
+			<div id="register" style="display: none;">
+				<form action="/registerform" method="POST">
+					<fieldset class="formSize">
+					<div class="form" >
+						<h2>Register</h2>
+					</div>
+						<!--Start of name box-->
+						<h4> Name*</h4>
+						<input type="text" name="name" placeholder="Enter your name" required />
+						<!--End of name box-->
+
+						<!--Start of email box-->
+						<h4>Email*</h4>
+						<input type="text" name="email" placeholder="Enter your email" required/>
+						<!--End of email box-->
+
+						<!--Start of password box-->
+						<h4> Password*</h4>
+						<input type="password" name="password" placeholder="Enter your password" required>
+						<h4>Re-Enter Password*</h4>
+						<input type="password" name="passwordverify" placeholder="Confirm your password" required>
+						<!--End of password box-->
+
+						<br><br>
+						<input type="submit" value="Submit">
+
+						<h5>* = required field</h5>
+				
+					</fieldset>
+				</form>
+			</div>
+			<!--End of register box-->
+
+			
+			<!--Start of register prompt-->
+			<div id="registerPrompt">
+
+				<h2>Create an Account</h2>
+				<p>Creating an account allows you to track your progress as you visit the many stadia loacted throughout Scotland</p>
+				<button onclick="toggleRegister()">Sign Up Now!</button>
+			</div>
+			<!--End of register prompt-->
+		</div>
+
+		<!--Start of footer-->
+		<div>
+			<footer>
+                <%- include('../partials/footer') %>
+			</footer>
+		</div>
+		<!--End of footer-->
+
+		<!--Scripts-->
+		
+
+	</body>
+</html>

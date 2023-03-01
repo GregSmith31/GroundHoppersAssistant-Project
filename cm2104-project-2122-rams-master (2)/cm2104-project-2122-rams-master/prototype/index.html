@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+
+	
+	<head>
+		<title>Home</title>
+		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDIinvGWu8M4sNu7oX0uPPefygsCPcb6sE"></script>
+	</head>
+		
+	<body>
+		
+		<header>
+
+			
+			<h1 id="pageHeader">GroundHoppersAssistant</h1>
+			
+				<a><img id="siteLogo"src="GroundhoppersAssistant.png"></a>
+		
+			<!--Start of navigation bar-->
+			<div class="navbar" id="myNavbar">
+				<div id="navbar-container">
+					<a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+					<i class="fa fa-bars"></i>
+					</a>
+					<a href="index.html" class="active">Home</a>
+					<a href="map.html">Map</a>
+					<a href="account.html">Login/Account</a>
+				</div>			
+            </div>
+			<!--End of navigation bar-->
+	
+		</header>	
+		
+		
+		
+    	<div id="introText">
+			<h2>Welcome</h2>
+			<p>GroundHoppersAssistant is your brand new hub for finding out what matches you can go to this weekend and record your ground hopping adventure.</p>
+		</div>
+
+    	<div id="searchBox">
+			<form>
+				<!--Start of location field-->
+				<fieldset>
+					<p class="searchBoxTitle">Location</p>
+					<input type="text" name="Location" value="" placeholder="Type address..." id="location_input">
+
+					<p class="instructionText">Enter your location.</p>	<button onclick="getLocation(function(position){})" type="button" class="icon"><i class="fa fa-map-pin"></i></button>
+					<p class="Error" id="locationError"></p>
+				<!--End of location field-->
+
+				<!--Start of date field-->				
+					<p class="searchBoxTitle">Date</p>
+					<input type="date" name="Date" value="" id="enteredDate">
+					<p class="instructionText">Enter the date of the match you'd like to go to.</p>				
+				<!--End of date field-->
+				
+				<!--Start of price field-->			
+					<p class="searchBoxTitle">Max Distance</p>
+					<input type="text" name="MaxPrice" value="" id="maxDistance">
+					<p class="instructionText">Enter the max distance you'd like to travel in KM</p>
+					<p class="Error" id="maxDistanceError"></p>
+				</fieldset>
+				<!--End of price field-->
+			</form>
+
+			<input type="submit" onclick="search()" value="Search">
+    	</div>
+
+		<div id="searchResult">
+
+			<h2>Search Results</h2>
+			<div>
+				<button onclick="sortByDistance()" type="button">Sort By Distance</button>
+				<ul id="results" >
+				</ul>
+			</div>
+
+			
+		</div>
+	
+		<!--Start of footer-->
+		<div>
+    		<footer>
+       			<p> Page Created by RAM's</p>
+    		</footer>
+		</div>
+		<!--End of footer-->
+
+		<!--Scripts-->
+		<script src="js/main.js"></script>
+
+	</body>
+
+</html>

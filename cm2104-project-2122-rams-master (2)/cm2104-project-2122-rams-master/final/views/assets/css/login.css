@@ -1,0 +1,77 @@
+#login {
+	width: 50%;
+	height: 445px;
+	margin-left: 5%;
+	margin-top: 5%;
+	float: left;
+	box-sizing: border-box;
+	color: white;
+	text-align: center;
+
+}
+
+#register {
+	height: 480px;
+	background-color: white;
+	margin-top: 2%;
+	width: 30%;
+	float: left;
+	color: black;
+	text-align: center;
+	box-sizing: border-box;
+	display: none;
+	margin-right: 5%;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+#registerPrompt {
+	float: left;
+	text-align: center;
+	color: white;
+	width: 30%;
+	padding: 5%;
+	margin-right: 10%;
+	box-sizing: border-box;
+	margin-top: 5%;
+}
+
+.formSize {
+	height: 425px;
+	box-sizing: border-box;
+	border: none;
+}
+
+#register input {
+	box-sizing: border-box;
+	width: 45%;
+}
+
+@media screen and (max-width:800px) {
+
+	#login {
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	#registerPrompt {
+		clear: both;
+		margin-left: 25%;
+		width: 50%;
+		;
+		margin-bottom: 10%;
+		margin-top: -25%;
+
+	}
+
+	#register {
+		clear: both;
+		margin-left: 25%;
+		width: 50%;
+		margin-bottom: 10%;
+		margin-top: -25%;
+	}
+
+}
+
+

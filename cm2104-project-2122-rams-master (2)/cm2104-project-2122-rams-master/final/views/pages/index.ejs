@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+
+	
+	<head>
+		<%- include('../partials/head') %>
+        <link rel="stylesheet" href="../assets/css/home.css">
+	</head>
+		
+	<body>
+		
+		<header>
+					<%- include('../partials/header') %>
+				
+					<a href="/" class="active">Home</a>
+					<a href="map">Map</a>
+					<a href="login">Account</a>
+				</div>
+			</div>
+		</header>	
+		
+		
+		
+    	<div id="introText">
+			<h2>Welcome</h2>
+			<p>GroundHoppersAssistant is your brand new hub for finding out what matches you can go to this weekend and record your ground hopping adventure.</p>
+		</div>
+
+    	<div id="searchBox">
+			<form>
+				<!--Start of location field-->
+				<fieldset>
+					<p class="searchBoxTitle">Location</p>
+					<input type="text" name="Location" value="" placeholder="Type address..." id="location_input">
+
+					<p class="instructionText">Enter your location</p>	<button onclick="getLocation(function(position){})" type="button" class="icon">Use your location    <i class="fa fa-map-pin"></i>	</button>
+					<p id="locationError"></p>
+				<!--End of location field-->
+
+				<!--Start of date field-->				
+					<p class="searchBoxTitle">Date</p>
+					<input type="date" name="Date" value="" id="enteredDate">
+					<p class="instructionText">Enter the date of the match you'd like to go to.</p>				
+				<!--End of date field-->
+				
+				<!--Start of price field-->			
+					<p class="searchBoxTitle">Max Distance</p>
+					<input type="text" name="MaxDistance" value="" id="maxDistance">
+					<p class="instructionText">Enter the max distance you'd like to travel in KM</p>
+					<p class="Error" id="maxDistanceError"></p>
+				</fieldset>
+				<!--End of price field-->
+			</form>
+
+			<input type="submit" onclick="search()" value="Search">
+    	</div>
+
+		<div id="searchResult">
+
+			<h2>Search Results</h2>
+			<div>
+				<button onclick="sortByDistance()" type="button">Sort By Distance</button>
+				<ul id="results" >
+				</ul>
+			</div>
+
+			
+		</div>
+	
+		<!--Start of footer-->
+		<div>
+    		<footer>
+                <%- include('../partials/footer') %>
+				<script src="../assets/js/home.js"></script>
+    		</footer>
+		</div>
+		<!--End of footer-->
+
+		
+
+	</body>
+
+</html>

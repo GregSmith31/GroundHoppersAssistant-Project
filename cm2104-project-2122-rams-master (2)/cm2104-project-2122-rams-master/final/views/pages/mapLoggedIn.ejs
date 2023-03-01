@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+
+	
+	<head>
+        <title>Map</title>
+		<%- include('../partials/head') %>
+        <link rel="stylesheet" href="../assets/css/map.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	</head>
+		
+	<body>
+		
+		<header>
+
+					<%- include('../partials/header') %>
+					<a href="/">Home</a>
+					<a href="map" class="active">Map</a>
+					<a href="login">Account</a>
+				</div>
+			</div>
+		</header>	
+		<div class="main-content">
+            <div id="userTeams"><%= users.teams %></div>
+			<!--Start of map-->
+			<section class="map-container">
+				<article>
+					<div id="mapid"></div>
+				</article>
+				
+				<article>
+					<div id="mapItemsInfo">
+						<p>Select which teams you have visited to show them on the map: <br> </p>
+						<form action="/teamCheckBoxes" method="POST">
+							<!--Start of first list-->
+							<div id="teamList1" class="teamLists">
+									<!--Start of Premiership teams-->
+									<label id="premiership"><b>Premiership</b><br></label>
+									<!--End of Premiership teams-->
+
+									<!--Start of Championship teams-->
+									<label id ="championship"><br><b>Championship</b><br></label>
+									<!--End of Championship teams-->
+
+									<!--Start of League 1 teams-->
+									<label id="leagueOne"><br><b>League 1</b><br></label> 
+									<!--End of League 1 teams-->
+							</div>
+							<!--End of the first list-->
+							<p id="hiddenChecks"> <p>
+							<!--Start of the second list-->					
+							<div id="teamList2" class="teamLists">
+							
+									<!--Start of League 2 teams-->
+									<label id="leagueTwo"><b>League 2</b><br></label>
+									<!--End of League 2 teams-->
+
+									<!--Start of Highland League teams-->
+									<label id="highlandLeague"><br><b>Highland League</b><br></label>
+									<!--End of Highland League teams-->
+
+									<!--Start of Lowland League teams-->
+									<label id="lowlandLeague"><br><b>Lowland League</b><br></label>
+									<!--End of Lowland League teams-->
+
+								
+							</div>
+							<!--End of the second list-->
+							<input id="createSS" type="submit" value="Save">
+						</form>
+					</div>
+				</article>	
+			</section>
+			<!--End of map-->
+		</div>
+		<!--Start of footer-->
+		<div>
+			<footer>
+                <%- include('../partials/footer') %>
+			</footer>
+		</div>
+		<!--End of footer-->
+
+		<!--Scripts-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+		<script src="../assets/js/map.js"></script>
+
+	</body>
+
+</html>
